@@ -105,6 +105,31 @@ main p {
 #aniversario,#eventocorp,
 #sobre_NL,#contato {
     width: 100%; /* Ajuste para que as sections não ultrapassem a largura da tela*/
-max-width: 800px;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
 
 }
+/*Galeria*/
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .galeria img,
+  .galeria video {
+    border: 2px solid #455559;
+    border-radius: 8px;
+    width: 300px; /* Ajusta para que as imagens ocupem 100% da largura */
+    height: auto;
+    object-fit: cover;
+    background-color: #2f3d40;
+  }
+  
+  .galeria img:hover {
+    transform: scale(1.05);
+  }
+  
