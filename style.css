@@ -40,3 +40,71 @@ nav a:hover {
     color: #c9cccf;
 
 }
+
+/*Cabeçalho*/
+.header-conteudo {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* alinha todo o conteúdo verticalmente */
+    padding: 20px;
+}
+
+.logo img {
+    width: 350px;
+}
+
+.texto-direita {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    height: 100%;
+    text-align: right;
+    
+}
+
+.slogan {
+    color: #b98e4c;
+    font-size: 3rem;
+    margin: auto;
+    text-align: center;
+
+}
+
+.santo {
+    margin: auto;
+    text-align: center;
+    margin-top: 10px;
+    color: #c9cccf;
+    font-size: 1.5rem;
+}
+
+/*Main*/
+main {
+    margin: auto;
+    padding: 10px;
+    width: 70%;
+
+}
+
+main h1 {
+    text-align: center;
+    padding: 5px;
+    font-size: 2rem;
+    color: #b98e4c;
+}
+
+main p {
+    margin: auto;
+    padding: 10px;
+    font-size: 1.5rem;
+    color: #c9cccf;
+}
+
+/*sections*/
+#eventos,#casamento,
+#aniversario,#eventocorp,
+#sobre_NL,#contato {
+    width: 100%; /* Ajuste para que as sections não ultrapassem a largura da tela*/
+max-width: 800px;
+
+}

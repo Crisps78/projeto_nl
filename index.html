@@ -1,20 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>N&L_Music</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <nav>
-            <a href="#inicio">Início</a>
-            <a href="#sobre_N&L">Sobre N&L</a>
-            <a href="#contato">Contatos</a>
-        </nav>
+      <nav>
+        <a href="#inicio">Início</a>
+        <a href="#sobre_N&L">Sobre N&L</a>
+        <a href="#contato">Contatos</a>
+      </nav>
 
-        <div></div>
+      <div class="header-conteudo">
+        <div class="logo">
+          <img src="./logo/nl.png" alt="" />
+        </div>
+        <div class="texto-direita">
+          <h1 class="slogan">"Cantar é próprio nde quem ama"</h1>
+          <p class="santo">Santo Agostinho</p>
+        </div>
+      </div>
     </header>
-</body>
+
+    <main>
+      <section class="fotos-videos">
+        <h1>Fotos e Videos</h1>
+        <div class="galeria">
+          <!--imagens-->
+          <img src="./img/img_01 (1).jpeg" alt="r&r" onclick="ampliar(this)" />
+          <img
+            src="./img/img_01 (2).jpeg"
+            alt="banda"
+            onclick="ampliar(this)"
+          />
+          <img
+            src="./img/img_01 (3).jpeg"
+            alt="banda2"
+            onclick="ampliar(this)"
+          />
+          <img
+            src="./img/img_01 (4).jpeg"
+            alt="banda-e casamento"
+            onclick="ampliar(this)"
+          />
+          <img src="./img/img_01 (5).jpeg" alt="n&l" onclick="ampliar(this)" />
+          <img src="./img/img_01 (6).jpeg" alt="f&b" onclick="ampliar(this)" />
+          <img
+            src="./img/img_01 (7).jpeg"
+            alt="n&l-cantando"
+            onclick="ampliar(this)"
+          />
+
+          <!--videos-->
+          <video controls width="300">
+            <source src="./videos/2v.mp4" type="video/mp4" />
+            <source src="./videos/2v.webm" type="video/webm" />
+            <source src="./videos/2v.ogv" type="video/ogv" />
+            Seu navegador não suporta vídeo.
+          </video>
+
+          <video controls width="300">
+            <source src="./videos/3v.mp4" type="video/mp4" />
+            <source src="./videos/3v.webm" type="video/wemm" />
+            <source src="./videos/3v.ogv" type="video/ogv" />
+            Seu navegador não suporta vídeo.
+          </video>
+
+          <video controls width="300">
+            <source src="./videos/4v.mp4" type="video/mp4" />
+            <source src="./videos/4v.webm" type="video/webm" />
+            <source src="./videos/4v.ogv" type="video/ogv" />
+            Seu navegador não suporta vídeo.
+          </video>
+        </div>
+
+        <!--Imagem ampliada-->
+        <div id="popup" onclick="fechar()">
+            <img id="popup-img" alt="Imagem Ampliada" />
+        </div>
+      </section>
+
+      <section id="eventos">
+        <h1>Eventos que transformamos em músicas</h1>
+        <p>Na N&L Music, acreditamos que cada ocasião merece uma trilha sonora única. Com mais de 20 anos de experiência, oferecemos performaces personalizados para diversos tipops de eventos, sempre com excelência, sensibilidade e paixão pela música.</p>
+      </section>
+
+      <section id="casamento">
+        <h1>Casamento</h1>
+        <p>
+            Transformamos o grande dia em uma experiência inesquecível. Do cortejo à festa, criamos momentos emocinantes com repertórios personalizados que refletem o estilo e a história do casal.
+        </p>
+      </section>
+
+        <section id="anivesario">
+            <h1>Aniversário</h1>
+            <p>
+                Comemorar a vida merece uma trilha à altura!
+                Preparamos uma seleção musical especial para tornar cada aniversário ainda mais animado e marcante, seja infantil, teen ou adulto.
+            </p>
+        </section>      
+
+        <section id="eventoscorp">
+            <h1>Eventos Corporativos</h1>
+            <p>
+                Soluções musicais sob medida para empresas.
+                Congressos, confraternizações, lançamentos, premiações ou jantares elevamos o nível do seu evento com elegância e profissionalismo.
+            </p>
+        </section>
+
+        <section id="sobre_NL">
+            <h1>Sobre N & L</h1>
+    
+            <p>
+              Nida & Liliane Já são mais de 20 anos de música, histórias e conexões.
+              A gente cresceu junto com tantos músicos incríveis, e muitos deles
+              seguem com a gente até hoje. Cada casamento é um novo sonho pra viver
+              — e é isso que nos move: transformar o amor de vocês em trilha sonora.
+            </p>
+          </section>
+
+          <section id="contato">
+            <h1>Contatos</h1>
+            <!-- <div class="form-container">
+                <h2>Fale Comigo</h2>
+                <form action="https://formspree.io/f/SEU_CODIGO_AQUI" method="POST">
+                  <label for="nome">Nome</label>
+                  <input type="text" id="nome" name="nome" required>
+            
+                  <label for="email">E-mail</label>
+                  <input type="email" id="email" name="email" required>
+            
+                  <label for="mensagem">Mensagem</label>
+                  <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+            
+                  <button type="submit">Enviar</button>
+                </form>
+              </div> -->
+          </section>
+          <div class="social-icons">
+            <a href="https://wa.me/5511987654321" target="_blank" class="whatsapp">
+              <img src="./logo/whatsapp1.png" alt="whatsapp" />
+            </a>
+            <a
+              href="https://instagram.com/seu_perfil"
+              target="_blank"
+              class="instagram"
+            >
+              <img src="./logo/instagram.png" alt="" />
+            </a>
+            <a id="inicio" href="">Voltar para inicio</a>
+          </div>
+    
+    
+    </main>
+    <script>
+      function ampliar(img) {
+        const popup = document.getElementById("popup");
+        const popupImg = document.getElementById("popup-img");
+        popupImg.src = img.src;
+        popup.style.display = "flex";
+      }
+
+      function fechar() {
+        document.getElementById("popup").style.display = "none";
+      }
+    </script>
+
+    <footer>&copy; Desenvolvido por Cris'Arts</footer>
+  </body>
 </html>
