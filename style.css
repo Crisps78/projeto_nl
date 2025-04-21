@@ -119,17 +119,182 @@ main p {
     padding: 20px;
   }
   
-  .galeria img,
-  .galeria video {
+  .galeria img {
     border: 2px solid #455559;
     border-radius: 8px;
-    width: 300px; /* Ajusta para que as imagens ocupem 100% da largura */
-    height: auto;
+    width: 300px; /* Agora as imagens vão ser menores */
+    height: 300;
     object-fit: cover;
     background-color: #2f3d40;
+    cursor: pointer;
+    transition: transform 0.4s;
   }
   
   .galeria img:hover {
     transform: scale(1.05);
+  }
+  
+  .galeria video {
+    border: 2px solid #455559;
+    border-radius: 8px;
+    width: 300px; /* Vídeos continuam com 300px */
+    height: 300px;
+    object-fit: cover;
+    background-color: #2f3d40;
+  }
+  
+
+  
+  
+  .galeria img:hover {
+    transform: scale(1.05);
+  }
+  /* Popup */
+#popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+  }
+  
+  #popup-img {
+    max-width: 90%;
+    max-height: 90%;
+    border: 4px solid white;
+    border-radius: 10px;
+  }
+  /* Formulário */
+.form-container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 500px;
+    margin: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .social-icons img {
+    width: 50px;
+    height: auto;
+    transition: transform 0.3s ease;
+  }
+  
+  .social-icons img:hover {
+    transform: scale(1.1);
+  }
+  #inicio{
+    color: #b98e4c;
+    margin-top: 15px;
+    font-size: 1rem;
+    text-align: center;
+    display: block;
+    cursor: pointer;
+  
+  }
+  
+  #inicio:hover {
+    color: #49e378;
+  }
+  
+  h2 {
+    text-align: center;
+    color: #333;
+  }
+  
+  input,
+  textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    background-color: #4caf50;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Estilos padrão para telas grandes */
+  .nav {
+    display: flex;
+    flex-direction: row; /* Em telas grandes, a navegação pode ser horizontal */
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .slogan {
+    font-size: 3rem; /* Ajuste para telas grandes */
+  }
+  
+  .santo,
+  main p {
+    font-size: 1.2rem; /* Aumente o tamanho da fonte */
+  }
+  
+  main h1 {
+    font-size: 2.5rem; /* Tamanho maior para telas grandes */
+  }
+  
+  /* Estilos para telas pequenas */
+  @media (max-width: 600px) {
+    .nav {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+  
+    .slogan {
+      font-size: 1.3rem;
+    }
+  
+    .santo,
+    main p {
+      font-size: 1rem;
+    }
+  
+    main h1 {
+      font-size: 1.5rem;
+    }
+  
+    .galeria img {
+      width: 100%;
+      height: auto;
+    }
+  
+    main {
+      max-width: 95%;
+      padding: 10px;
+    }
+  }
+  
+  /* Rodapé */
+  footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #182625;
+    color: #c9cccf;
   }
   
