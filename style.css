@@ -320,6 +320,10 @@ main p {
       max-width: 95%;
       padding: 10px;
     }
+
+    .btn-voltar a{
+      font-size: 80%;
+    }
   }
   
   
