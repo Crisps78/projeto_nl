@@ -31,7 +31,7 @@ nav {
 nav a {
     color: var(--cor4);
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: bold; /* peso na fonte */
 }
 
@@ -274,6 +274,7 @@ main p {
   /* Estilos para telas pequenas */
   @media (max-width: 600px) {
     .nav {
+     
       flex-direction: column;
       align-items: center;
       gap: 10px;
