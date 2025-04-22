@@ -280,6 +280,11 @@ main p {
     main h1 {
       font-size: 1.5rem;
     }
+    section p{
+        text-align: justify;
+        
+
+    }
   
     .galeria img {
       width: 100%;
