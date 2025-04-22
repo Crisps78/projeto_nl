@@ -329,6 +329,7 @@ main p {
   
   /* Rodapé */
   footer {
+    font-size: 10px;
     text-align: center;
     padding: 10px;
     background-color: #182625;
