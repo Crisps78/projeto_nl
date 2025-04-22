@@ -265,7 +265,9 @@ main p {
       align-items: center;
       gap: 10px;
     }
-  
+    .logo img {
+        max-width: 200px;
+    }
     .slogan {
       font-size: 1.3rem;
     }
