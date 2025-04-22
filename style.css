@@ -13,18 +13,18 @@
     --cor6: #49e378;
 }
 body {
-background-color: var(--cor1)
+background-color: var(--cor1);
 }
 
 header {
-    background-color: var(--cor2)
+    background-color: var(--cor2);
     padding: 20px;
 }
 
 nav {
     display: flex;
     justify-content: space-evenly;
-    background-color: #182625;
+    background-color: var(--cor3);
     padding: 20px;
 }
 
@@ -37,7 +37,7 @@ nav a {
 
 nav a:hover {
     text-decoration: underline;
-    color: #c9cccf;
+    color: var(--cor4)
 
 }
 
@@ -74,42 +74,59 @@ nav a:hover {
     margin: auto;
     text-align: center;
     margin-top: 10px;
-    color: #c9cccf;
+    color: var(--cor4);
     font-size: 1.5rem;
 }
 
 /*Main*/
 main {
-    margin: auto;
-    padding: 10px;
     width: 70%;
-
+    margin: 0 auto;
+    padding: 20px;
 }
 
-main h1 {
+main h2 {
     text-align: center;
     padding: 5px;
     font-size: 2rem;
-    color: #b98e4c;
+    color: var(--cor5)
 }
 
 main p {
     margin: auto;
     padding: 10px;
     font-size: 1.5rem;
-    color: #c9cccf;
+    color: var(--cor4)
 }
 
+
 /*sections*/
-#eventos,#casamento,
-#aniversario,#eventocorp,
-#sobre_NL,#contato {
-    width: 100%; /* Ajuste para que as sections não ultrapassem a largura da tela*/
+#eventos,
+#casamento,
+#aniversario,
+#eventoscorp,
+#sobre_NL,
+#contato {
+    width: 100%;
     max-width: 800px;
     margin: auto;
     padding: 20px;
-
 }
+/* Ajuste para os parágrafos */
+#eventos p,
+#casamento p, 
+#aniversario p,
+#eventoscorp p,
+#sobre_NL p,
+#contato p {
+    max-width: 100%;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+    text-align: justify;
+    line-height: 1.6;
+}
+
 /*Galeria*/
 .galeria {
     display: flex;
@@ -120,35 +137,33 @@ main p {
   }
   
   .galeria img {
-    border: 2px solid #455559;
+    width: 300px;
+    height: 300px;
+    border: 2px solid var(--cor2);
     border-radius: 8px;
-    width: 300px; /* Agora as imagens vão ser menores */
-    height: 300;
     object-fit: cover;
-    background-color: #2f3d40;
     cursor: pointer;
-    transition: transform 0.4s;
-  }
+    background-color: var(--cor1);
+    transition: transform 0.4s; 
+}
   
   .galeria img:hover {
     transform: scale(1.05);
   }
   
   .galeria video {
-    border: 2px solid #455559;
+    border: 2px solid var(--cor2);
     border-radius: 8px;
     width: 300px; /* Vídeos continuam com 300px */
     height: 300px;
     object-fit: cover;
-    background-color: #2f3d40;
+    background-color: var(--cor1);
   }
   
 
   
   
-  .galeria img:hover {
-    transform: scale(1.05);
-  }
+
   /* Popup */
 #popup {
     display: none;
@@ -265,8 +280,16 @@ main p {
       align-items: center;
       gap: 10px;
     }
+    .header-conteudo {
+        flex-direction: column;
+        text-align: center;
+    }
+    .texto-direita {
+        text-align: center !important;
+        margin-top: 20px;
+    }
     .logo img {
-        max-width: 200px;
+        width: 250px; /* Tamanho mais adequado */
     }
     .slogan {
       font-size: 1.3rem;
@@ -296,6 +319,7 @@ main p {
       padding: 10px;
     }
   }
+  
   
   /* Rodapé */
   footer {
