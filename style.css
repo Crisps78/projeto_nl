@@ -209,25 +209,23 @@ main p {
   .social-icons img:hover {
     transform: scale(1.1);
   }
-  #inicio{
+  .btn-voltar a{
+    display: flex;
+    justify-content: right;
     color: #b98e4c;
-    margin-top: 15px;
     font-size: 1rem;
+    margin-top: 15px;
     text-align: center;
     display: block;
     cursor: pointer;
   
   }
   
-  #inicio:hover {
+  .btn-voltar a:hover {
     color: #49e378;
   }
   
-  h2 {
-    text-align: center;
-    color: #333;
-  }
-  
+
   input,
   textarea {
     width: 100%;
@@ -307,6 +305,9 @@ main p {
         text-align: justify;
         
 
+    }
+    section h2 {
+      font-size: 1.2rem;
     }
   
     .galeria img {
