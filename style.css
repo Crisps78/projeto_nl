@@ -3,6 +3,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 /* =================== RESET =================== */
+
+/* =================== SCROLL =================== */
+html {
+  scroll-behavior: smooth;
+}
 * {
   margin: 0;
   padding: 0;
@@ -10,110 +15,105 @@
 }
 
 :root {
-    --cor1: #2f3d40;
-    --cor2: #455559;
-    --cor3: #182625;
-    --cor4: #c9cccf;
-    --cor5: #b98e4c;
-    --cor6: #49e378;
+  --cor1: #2f3d40;
+  --cor2: #455559;
+  --cor3: #182625;
+  --cor4: #c9cccf;
+  --cor5: #b98e4c;
+  --cor6: #49e378;
 }
 
 /* =================== BODY =================== */
 body {
-background-color: var(--cor1);
+  background-color: var(--cor1);
 }
 
 /* =================== HEADER =================== */
 header {
-    background-color: var(--cor2);
-    padding: 20px;
+  background-color: var(--cor2);
+  padding: 20px;
 }
 
 nav {
-    display: flex;
-    justify-content: space-evenly;
-    background-color: var(--cor3);
-    padding: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: var(--cor3);
+  padding: 20px;
 }
 
 nav a {
-    color: var(--cor4);
-    text-decoration: none;
-    font-size: 1.2rem;
-    font-weight: bold; /* peso na fonte */
+  color: var(--cor4);
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
 }
 
 nav a:hover {
-    text-decoration: underline;
-    color: var(--cor6)
-
+  text-decoration: underline;
+  color: var(--cor6);
 }
 
-/*Cabeçalho*/
 .header-conteudo {
-    display: flex;
-    justify-content: center;
-    align-items: center; /* alinha todo o conteúdo verticalmente */
-    padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
 }
 
 .logo img {
-    width: 350px;
+  width: 350px;
 }
 
 .texto-direita {
-    display: flex;
-    flex-direction: column;
-    justify-self: center;
-    height: 100%;
-    text-align: right;
-    
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  height: 100%;
+  text-align: right;
 }
 
 .slogan {
-    color: #b98e4c;
-    font-size: 3rem;
-    font-family: "Roboto Serif", serif;
-    margin: auto;
-    text-align: center;
-
+  color: var(--cor5);
+  font-size: 3rem;
+  font-family: "Roboto Serif", serif;
+  margin: auto;
+  text-align: center;
 }
 
 .santo {
-    margin: auto;
-    text-align: center;
-    margin-top: 10px;
-    color: var(--cor4);
-    font-size: 1.5rem;
-    font-family: "Poppins", sans-serif;
+  margin: auto;
+  text-align: center;
+  margin-top: 10px;
+  color: var(--cor4);
+  font-size: 1.5rem;
+  font-family: "Poppins", sans-serif;
   font-weight: 500;
-    
-    
 }
 
 /* =================== MAIN =================== */
 main {
-    width: 70%;
-    margin: 0 auto;
-    padding: 20px;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
 main h2 {
   font-family: "Poppins", sans-serif;
   font-weight: 300;
-    text-align: center;
-    padding: 5px;
-    font-size: 2rem;
-    color: var(--cor5)
+  text-align: center;
+  padding: 5px;
+  font-size: 2rem;
+  color: var(--cor5);
 }
 
 main p {
   font-family: "Poppins", sans-serif;
   font-weight: 200;
-    margin: auto;
-    padding: 10px;
-    font-size: 1.5rem;
-    color: var(--cor4)
+  margin: auto;
+  padding: 10px;
+  font-size: 1.5rem;
+  color: var(--cor4);
 }
 
 /* =================== SEÇÕES =================== */
@@ -123,138 +123,152 @@ main p {
 #eventoscorp,
 #sobre_NL,
 #contato {
-    width: 100%;
-    max-width: 800px;
-    margin: auto;
-    padding: 20px;
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
 }
-/* Ajuste para os parágrafos */
+
 #eventos p,
 #casamento p, 
 #aniversario p,
 #eventoscorp p,
 #sobre_NL p,
 #contato p {
-    max-width: 100%;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-    hyphens: auto;
-    text-align: justify;
-    line-height: 1.6;
-    
+  max-width: 100%;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
+  text-align: justify;
+  line-height: 1.6;
 }
 
 /* =================== GALERIA =================== */
 .galeria {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    padding: 20px;
-  }
-  
-  .galeria img {
-    width: 300px;
-    height: 300px;
-    border: 2px solid var(--cor2);
-    border-radius: 8px;
-    object-fit: cover;
-    cursor: pointer;
-    background-color: var(--cor1);
-    transition: transform 0.4s; 
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
 }
-  
-  .galeria img:hover {
-    transform: scale(1.05);
-  }
-  
-  .galeria video {
-    border: 2px solid var(--cor2);
-    border-radius: 8px;
-    width: 300px; /* Vídeos continuam com 300px */
-    height: 300px;
-    object-fit: cover;
-    background-color: var(--cor1);
-  }
-  
-  /* =================== POPUP DE IMAGEM =================== */
+
+.galeria img,
+.galeria video {
+  width: 300px;
+  height: 300px;
+  border: 2px solid var(--cor2);
+  border-radius: 8px;
+  object-fit: cover;
+  background-color: var(--cor1);
+}
+
+.galeria img {
+  cursor: pointer;
+  transition: transform 0.4s;
+}
+
+.galeria img:hover {
+  transform: scale(1.05);
+}
+
+/* =================== POPUP DE IMAGEM =================== */
 #popup {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
-    justify-content: center;
-    align-items: center;
-    z-index: 999;
-  }
-  
-  #popup-img {
-    max-width: 90%;
-    max-height: 90%;
-    border: 4px solid white;
-    border-radius: 10px;
-  }
-  
-  /* =================== FORMULÁRIO DE CONTATO =================== */
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+#popup-img {
+  max-width: 90%;
+  max-height: 90%;
+  border: 4px solid white;
+  border-radius: 10px;
+}
+
+/* =================== FORMULÁRIO DE CONTATO =================== */
 .form-container {
-    background-color: white;
-    padding: 30px;
-    border-radius: 10px;
-    max-width: 500px;
-    margin: auto;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 500px;
+  margin: auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
-  input,
-  textarea {
-    width: 100%;
-    padding: 12px;
-    margin: 8px 0 16px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  button {
-    background-color: #4caf50;
-    color: white;
-    padding: 14px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    width: 100%;
-    font-size: 16px;
-  }
-  
-  button:hover {
-    background-color: #45a049;
-  }
+input,
+textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
 
-  /* =================== REDES SOCIAIS =================== */
-  .social-icons {
+
+
+button:hover {
+  background-color: var(--cor6);
+}
+
+/* =================== REDES SOCIAIS =================== */
+.whatsapp-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.agenda-label {
+  font-weight: bold;
+  color: #25D366;
+  font-size: 1.2em;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.social-icons a {
+  color: var(--cor4);
+  padding: 10px;
+  /* aria-label e alt devem ser usados no HTML */
+}
+
+.social-icons img {
+  width: 50px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+  transform: scale(1.1);
+}
+
+.btn-voltar a {
+    color: var(--cor4);
     display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin-bottom: 20px;
-  }
+    justify-content: flex-end; /* alinha o botão à direita */
+    margin-top: 20px;
   
-  .social-icons img {
-    width: 50px;
-    height: auto;
-    transition: transform 0.3s ease;
-  }
   
-  .social-icons img:hover {
-    transform: scale(1.1);
-  }
+}
 
-  .btn-voltar a:hover {
-    color: #49e378;
-  }
+.btn-voltar a:hover {
+  color: #49e378;
+  transform: scale(1.05);
+}
 
-  .voltar-topo {
+.voltar-topo {
   display: block;
   text-align: center;
   margin-bottom: 10px;
@@ -268,109 +282,95 @@ main p {
   color: #000;
   text-decoration: underline;
 }
-  
-  
-  
 
-  
-   /* =================== FOOTER =================== */
-   footer {
-    font-size: 10px;
-    text-align: center;
-    padding: 10px;
-    background-color: #182625;
-    color: #c9cccf;
-  }
+/* =================== FOOTER =================== */
+footer {
+  font-size: 1rem;
+  text-align: center;
+  padding: 10px;
+  background-color: #182625;
+  color: #c9cccf;
+}
 
-  
-  /* Estilos padrão para telas grandes */
+/* =================== NAVEGAÇÃO =================== */
+.nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
+/* =================== TIPOGRAFIA =================== */
+.slogan {
+  font-size: 3rem;
+}
+
+.santo,
+main p {
+  font-size: 1.2rem;
+}
+
+main h1 {
+  font-size: 2.5rem;
+}
+
+
+
+/* =================== RESPONSIVIDADE =================== */
+@media (max-width: 600px) {
   .nav {
-    display: flex;
-    flex-direction: row; /* Em telas grandes, a navegação pode ser horizontal */
-    align-items: center;
-    gap: 20px;
+    flex-direction: column;
+    gap: 10px;
   }
-  
+
+  .header-conteudo {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .texto-direita {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .logo img {
+    width: 250px;
+  }
+
   .slogan {
-    font-size: 3rem; /* Ajuste para telas grandes */
+    font-size: 1.3rem;
   }
-  
+
   .santo,
   main p {
-    font-size: 1.2rem; /* Aumente o tamanho da fonte */
-  }
-  
-  main h1 {
-    font-size: 2.5rem; /* Tamanho maior para telas grandes */
-  }
-  footer{
     font-size: 1rem;
   }
 
-  html {
-    scroll-behavior: smooth;
+  main h1 {
+    font-size: 1.5rem;
   }
-  
-  
-  /* =================== RESPONSIVIDADE =================== */
-  @media (max-width: 600px) {
-    .nav {
-     
-      flex-direction: column;
-      align-items: center;
-      gap: 10px;
-    }
-    .header-conteudo {
-        flex-direction: column;
-        text-align: center;
-    }
-    .texto-direita {
-        text-align: center !important;
-        margin-top: 20px;
-    }
-    .logo img {
-        width: 250px; /* Tamanho mais adequado */
-    }
-    .slogan {
-      font-size: 1.3rem;
-    }
-  
-    .santo,
-    main p {
-      font-size: 1rem;
-    }
-  
-    main h1 {
-      font-size: 1.5rem;
-    }
-    section p{
-        text-align: justify;
-        
 
-    }
-    section h2 {
-      font-size: 1.2rem;
-    }
-  
-    .galeria img {
-      width: 100%;
-      height: 300px;
-    }
-  
-    main {
-      max-width: 95%;
-      padding: 10px;
-    }
-
-    .btn-voltar a{
-      font-size: 80%;
-    }
-
-    footer {
-      font-size: 80%;
-    }
+  section p {
+    text-align: justify;
   }
-  
-  
- 
-  
+
+  section h2 {
+    font-size: 1.2rem;
+  }
+
+  .galeria img,
+  .galeria video {
+    width: 300px;
+    height: 250px;
+  }
+
+  main {
+    max-width: 95%;
+    padding: 10px;
+  }
+
+  .btn-voltar a,
+  footer {
+    font-size: 1rem;
+  }
+}
